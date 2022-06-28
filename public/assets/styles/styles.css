@@ -1,0 +1,316 @@
+/* Common Fonts Import*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Ubuntu:wght@300;400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/* General Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font: normal 16px poppins;
+    color: #555;
+    scroll-behavior: smooth !important;
+}
+ul, nav {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover {
+    opacity: 1;
+}
+a.btn {
+    color: #fff;
+    border-radius: 5px;
+    text-transform: none;
+    background-color: #9032bb;
+    font-weight: 500;
+    text-align: center;
+}
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #9032bb;
+    border: 0;
+    margin-bottom: 80px;
+}
+
+/* Section Common Styles */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 100px;
+}
+@media (max-width: 1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+@media (max-width: 600px) {
+    section {
+        padding: 80px 30px;
+    }
+}
+section h3.title {
+    color: #414a4f;
+    text-transform: capitalize;
+    font: bold 32px 'Poppins', sans-serif;
+    margin-bottom: 35px;
+    text-align: center;
+}
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+ul.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9032bb;
+    padding: 10px 100px 10px;
+}
+header h2 {
+    font-family: 'Poppins', sans-serif;
+}
+header nav {
+    display: flex;
+}
+header nav li {
+    margin: 0 15px;
+}
+header nav li:first-child {
+    margin-left: 0;
+}
+header nav li:last-child {
+    margin-right: 0;
+}
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h2 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Inicio Section */
+.inicio {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+.inicio .background-image {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #2196f3;
+    z-index: -1;
+}
+.inicio .background-image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #414a4f;
+    opacity: 0.5;
+}
+.inicio h1 {
+    font: bold 50px 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+.inicio a.btn {
+    padding: 10px 45px;
+}
+@media (max-width: 800px) {
+    .inicio {
+        min-height: 600px;
+    }
+
+    .inicio h1 {
+        font-size: 48px;
+    }
+
+    .inicio a.btn {
+        padding: 15px 40px;
+    }
+}
+
+.inicio2 {
+    background-color: #EFFBE6;
+    text-align: center;
+    padding: 50px;
+}
+.inicio2 p {
+    font-family: 'Ubuntu', sans-serif;
+}
+.inicio2 .hoco {
+    display: flex;
+    align-items: center;
+}
+.inicio2 .hoco img {
+    width: 200px;
+    height: 270px;
+    border-radius: 3px;
+}
+
+.inicio3 {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 80px;
+}
+.inicio3 p {
+    font-family: 'Ubuntu', sans-serif;
+}
+.inicio3 .hoco {
+    display: flex;
+    align-items: center;
+}
+.inicio3 .hoco img {
+    width: 300px;
+    height: 180px;
+    border-radius: 3px;
+}
+
+/* Nosotros Section */
+.nosotros {
+    background-color: #F0F4F3;
+    text-align: center;
+    padding: 70px;
+}
+.nosotros p {
+    font-family: 'Ubuntu', sans-serif;
+}
+.nosotros .hoco {
+    display: flex;
+    align-items: center;
+}
+.nosotros .hoco img {
+    width: 300px;
+    height: 180px;
+    border-radius: 3px;
+}
+
+/* Descarga Section */
+.descarga {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 70px 200px;
+}
+.descarga p {
+    font-family: 'Ubuntu', sans-serif;
+}
+.descarga .hoco {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.descarga .hoco .apps li {
+    background-color: #000000;
+    border-radius: 5px;
+}
+.descarga .hoco .apps li i {
+    font-size: 30px;
+    color: white;
+    padding: 10px 100px;
+}
+.descarga .hoco .apps li p {
+    color: white;
+}
+.descarga a.btn {
+    padding: 10px 45px;
+}
+
+/* Contacto Section */
+.contacto {
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 100px 200px;
+}
+.contacto p {
+    font-family: 'Ubuntu', sans-serif;
+}
+.contacto .hoco {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    flex-basis: 50%;
+}
+.contacto .hoco li {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+.contacto .hoco li a {
+    font-size: 40px;
+    color: black;
+    padding: 10px 5px 10px 250px;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background-color: #DBB6F6;
+    padding: 10px 0;
+}
+footer ul {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+footer ul li {
+    margin: 0 8px;
+}
+footer ul li:first-child {
+    margin-left: 0;
+}
+footer ul li:last-child {
+    margin-right: 0;
+}
+footer p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0);
+    margin-bottom: 10px;
+}
